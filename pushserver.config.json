@@ -1,0 +1,24 @@
+{
+    "webPort": 8000,
+
+    "mongodbUrl": "process.env.PUSH_MONGO_URL",
+
+    "gcm": {
+        "apiKey": "process.env.GCM_API_KEY"
+    },
+
+    "apn": {
+        "connection": {
+            "gateway": "gateway.sandbox.push.apple.com",
+            "cert": "/path/to/cert.pem",
+            "key": "/path/to/key.pem"
+        },
+        "feedback": {
+            "address": "feedback.sandbox.push.apple.com",
+            "cert": "/path/to/cert.pem",
+            "key": "/path/to/key.pem",
+            "interval": 43200,
+            "batchFeedback": true
+        }
+    }
+}
